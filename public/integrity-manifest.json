@@ -1,0 +1,244 @@
+{
+  "files": [
+    {
+      "file": "ABRIR_CANDIDATO.cmd",
+      "bytes": 39,
+      "sha256": "0edbd8f5b22789c3f11971244871f1b36e23f9e710fdc8b25ca6429165ec81be"
+    },
+    {
+      "file": "acceso-mvh-digital.html",
+      "bytes": 6461,
+      "sha256": "3c002febf3f2210d4dc448f163d0266d6a036ea99004427dbfdeaf7fcd4ff1c7"
+    },
+    {
+      "file": "agroproductiva.html",
+      "bytes": 8855,
+      "sha256": "9f5bea6ce40be7932a2ca2d3d538553f9240650ca0bae7e0b1abc427e5555df0"
+    },
+    {
+      "file": "app.js",
+      "bytes": 35835,
+      "sha256": "f68772678155f3487193fe16635ac1dc18c477d869b7dca9b79565c6951bb08d"
+    },
+    {
+      "file": "assets/deslumbramiento.jpg",
+      "bytes": 94271,
+      "sha256": "54f30c47e39e67a5dc4991943a0a53e256692dc7fe9ef4dedb84764bff59fcbe"
+    },
+    {
+      "file": "assets/direccion-tecnica.jpg",
+      "bytes": 137682,
+      "sha256": "cdbbfe116f5eaf06713f85863b6a8784fe25e733c48ce7a89b7f5f863876b7e0"
+    },
+    {
+      "file": "assets/logo-mvh.png",
+      "bytes": 112023,
+      "sha256": "d7b82038a1a5bfb77e6ed031c789ca47f93d0297408f8ea43e1dcc5016f63f1d"
+    },
+    {
+      "file": "assets/portafolio-iluminacion-laboral-mvh.pdf",
+      "bytes": 4355396,
+      "sha256": "0905cd22018c2a71ca5d702cc5a7741863e3b9d94241e8e8cafb6cd86d4b0dd5"
+    },
+    {
+      "file": "assets/sectores.jpg",
+      "bytes": 179327,
+      "sha256": "53ceacdbbfabb06e46ab6369363549760b57236ff1bab8bc46396c4fbd84e76e"
+    },
+    {
+      "file": "assets/visuals/01_haner_inspeccion_agro.webp",
+      "bytes": 54750,
+      "sha256": "48270379a2c6cba3e60b24f0907d7dedf963b055df263a065c2dcea19c4852da"
+    },
+    {
+      "file": "assets/visuals/02_codisenio_comunitario.webp",
+      "bytes": 90588,
+      "sha256": "296b0dced009d1fa1f274fe35571920ae4a0f78567eb15dfbe47a1e479e1ad7b"
+    },
+    {
+      "file": "assets/visuals/03_personas_proceso_nocturno.webp",
+      "bytes": 123202,
+      "sha256": "acbf55965ec9227c1de21dd30f33b11eb7186282bfc4a084308ffc6fb0df539d"
+    },
+    {
+      "file": "assets/visuals/04_cultivo_protegido.webp",
+      "bytes": 132786,
+      "sha256": "1f00ca5169a84fbaae35c96ca1d4e449a2926d5ec0fb9f599f70759295afa90e"
+    },
+    {
+      "file": "assets/visuals/05_cadena_agroproductiva.webp",
+      "bytes": 117474,
+      "sha256": "f3f300fce4908cc8c1879540da3701176b337a1e659ee6bcbe0fbfabfc2a2e69"
+    },
+    {
+      "file": "assets/visuals/06_evaluacion_campo_haner.webp",
+      "bytes": 161228,
+      "sha256": "28af0cc386169a8b16b7f5bdfb0ddd99bb2a2e2df04b92f35a744d32436e3ab7"
+    },
+    {
+      "file": "assets/visuals/07_inspeccion_producto.webp",
+      "bytes": 129108,
+      "sha256": "5869de984b5686daa11a8df1f0814de9943b0fc6484bd6a3b8e1eb984a9650f4"
+    },
+    {
+      "file": "assets/visuals/08_diseno_solucion.webp",
+      "bytes": 61980,
+      "sha256": "5090e7de57613eb40a1225633a37b56c088d6c146a9bff3b27f4fb2785a5f80e"
+    },
+    {
+      "file": "assets/visuals/09_horticultura_cientifica.webp",
+      "bytes": 69734,
+      "sha256": "1ce238c522020b4896357d04408176c54abd6bf443931cf8bd7cadaa9be8834e"
+    },
+    {
+      "file": "assets/visuals/10_especie_bienestar.webp",
+      "bytes": 26390,
+      "sha256": "88b54c1fea6c0ea009747f1d89660c49f852ac704158704a6223ef9c0dbd0452"
+    },
+    {
+      "file": "assets/visuals/11_operacion_exterior_rio.webp",
+      "bytes": 151572,
+      "sha256": "6711a699654effc6455c3ba3f566e66fceff0dd89b67aab1625471a03cb51e4c"
+    },
+    {
+      "file": "assets/visuals/12_emergencia_ruta.webp",
+      "bytes": 110264,
+      "sha256": "db9c9a34269c654e584c62474404988a6c597e9720cbc2c60e6b8ef58aa5a0ca"
+    },
+    {
+      "file": "assets/visuals/13_compra_tecnica_haner.webp",
+      "bytes": 119426,
+      "sha256": "ed9267cd97217a94f73382f06bb06da1ef650b92b0c0409236eda6c409beb388"
+    },
+    {
+      "file": "assets/visuals/14_verificacion_evidencia.webp",
+      "bytes": 136188,
+      "sha256": "fd8e3b2e1e77e07ef1668e2fa61922a36fe684bcf7675c3dc91c6f5136774348"
+    },
+    {
+      "file": "assets/visuals/15_caracterizacion_digital.webp",
+      "bytes": 124442,
+      "sha256": "d3add11f6b2cfc381d50fb832d6c304a031675ed4dafc88b21f6a1303cb2acdc"
+    },
+    {
+      "file": "assets/visuals/16_revision_tecnica.webp",
+      "bytes": 82398,
+      "sha256": "7443d71ebd68ec819cc5637dd4f2554ba501a93f6eea789e728db933d4abcbda"
+    },
+    {
+      "file": "assets/visuals/17_conversacion_rural_haner.webp",
+      "bytes": 88382,
+      "sha256": "25d651edebfdbc6442ec8a08dcd2a35bb7d233ab99c14821e853c621403f74f8"
+    },
+    {
+      "file": "assets/visuals/manifest.json",
+      "bytes": 3508,
+      "sha256": "ef87d7b95867d460cbd02a14ab13ef0d7e725c8b50ac30fdc6fb369a9f64a161"
+    },
+    {
+      "file": "catalogs.bundle.js",
+      "bytes": 97712,
+      "sha256": "6fe8259d381289228a340f34517bae4dad47c34739b90a31b39fe1007a0e7f86"
+    },
+    {
+      "file": "ciencia.html",
+      "bytes": 6722,
+      "sha256": "29e869b15f6a9bba392ac95b3928e59751ea5d52a7a6af89473873f200c84e09"
+    },
+    {
+      "file": "conocimiento.html",
+      "bytes": 35816,
+      "sha256": "fc034809fd16ab28958d8f8162accc93fd01af7732114325e3f67df92da65e5e"
+    },
+    {
+      "file": "contacto.html",
+      "bytes": 6335,
+      "sha256": "f09c76a2d51ed21e4dfa5500f6a0de37ff28cb51d85f33d7bffe72fa3b48f8fd"
+    },
+    {
+      "file": "diseno-verificacion.html",
+      "bytes": 8544,
+      "sha256": "a9b0680514690d4fc8ffc301b7b32e61059ba7c81aa53b92d34a2b3cb7750694"
+    },
+    {
+      "file": "emergencia.html",
+      "bytes": 6856,
+      "sha256": "9d0456f4ec2593e1fe91dfcf510b0d2aff361f5c5085731ba7c519ff531cbc33"
+    },
+    {
+      "file": "index.html",
+      "bytes": 19101,
+      "sha256": "02a1d539a195d12c1558a9d81bf7c93708b3a2461f2be0cd669ca12a94ae35ac"
+    },
+    {
+      "file": "laboral.html",
+      "bytes": 9095,
+      "sha256": "54209f72eca7074afc92ecabc8b7298f05f51e120e4872849709cea9436281dd"
+    },
+    {
+      "file": "logic.js",
+      "bytes": 3851,
+      "sha256": "1c1c5ba2a5b167ba97e2a016f7ef00dbe329b6ffb20f4e5f5f13da26c74a74b7"
+    },
+    {
+      "file": "metodo.html",
+      "bytes": 7944,
+      "sha256": "8b8e95ff4afeb9b3dc8a5d323aa77135d8cc304c483c91b0235d4a850859ef79"
+    },
+    {
+      "file": "mvh-site-settings.js",
+      "bytes": 254,
+      "sha256": "f6a988118689af544a50eb57274d7365f7fc7741240e92803cf83e3c7e5e2093"
+    },
+    {
+      "file": "nosotros.html",
+      "bytes": 6764,
+      "sha256": "dafdc302ae0e43e6e9de1bad7bc6e2fe490c525b02f1d9a772215f5841fc3e06"
+    },
+    {
+      "file": "orientacion.html",
+      "bytes": 17315,
+      "sha256": "3e6d195c82bd4684267ae1bd8d9cb27938122f63a091c8c1f72a44c29523b3e6"
+    },
+    {
+      "file": "RELEASE_STATUS.json",
+      "bytes": 252,
+      "sha256": "6d5a78349bfa3df3a0c4c0a07e0736921dc80c512611accfa37f0159d89ca208"
+    },
+    {
+      "file": "robots.txt",
+      "bytes": 26,
+      "sha256": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1"
+    },
+    {
+      "file": "sectores.html",
+      "bytes": 7743,
+      "sha256": "592b3119dd98c6ac29cebc695476deb4a8a39f3960b87d52a040494b4356b35f"
+    },
+    {
+      "file": "SECURITY_HEADERS_REQUERIDOS.txt",
+      "bytes": 533,
+      "sha256": "103c761ae6b9c8f9a738fa97681a434bdffe6feb24f736c5598b58422670d51d"
+    },
+    {
+      "file": "site.webmanifest",
+      "bytes": 418,
+      "sha256": "4fbadabe47398331b7b5d3e2811942e53c4c1badf440963068e635c939e6add9"
+    },
+    {
+      "file": "soluciones.html",
+      "bytes": 7385,
+      "sha256": "ee3085be48ce0cc313d828836a7b604889d5a01a5f60abfbe327ddb3b16cd5f8"
+    },
+    {
+      "file": "styles.css",
+      "bytes": 59253,
+      "sha256": "8714a41fa412d49b781ff6e813a50e40bc664b8777870419337f48bdf4044e13"
+    },
+    {
+      "file": "territorial.html",
+      "bytes": 8304,
+      "sha256": "2f66aed0a0151e9a294d3713a465bfead0fdad6d258df1a878dec38290acf139"
+    }
+  ]
+}
