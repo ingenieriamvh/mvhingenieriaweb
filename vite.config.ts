@@ -14,6 +14,16 @@ const isCodexSeatbeltSandbox = process.env.CODEX_SANDBOX === "seatbelt";
 const localBindingConfig = {
   main: "./worker/index.ts",
   compatibility_flags: ["nodejs_compat"],
+  routes: [
+    { pattern: "ingenieriamvh.com", custom_domain: true },
+    { pattern: "www.ingenieriamvh.com", custom_domain: true },
+  ],
+  analytics_engine_datasets: [
+    {
+      binding: "ANALYTICS",
+      dataset: "ingenieriamvh_events",
+    },
+  ],
   d1_databases: d1
     ? [
         {
