@@ -4,6 +4,7 @@ import handler from "vinext/server/app-router-entry";
 
 interface Env {
   ASSETS: Fetcher;
+  ANALYTICS: AnalyticsEngineDataset;
   DB: D1Database;
   IMAGES: {
     input(stream: ReadableStream): {
@@ -28,6 +29,38 @@ interface ExecutionContext {
 const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
+
+    if (url.pathname === "/__analytics/event") {
+      if (request.method !== "POST") {
+        return new Response(null, { status: 405 });
+      }
+
+      const payload = (await request.json().catch(() => null)) as {
+        event?: unknown;
+      } | null;
+      const event = typeof payload?.event === "string" ? payload.event : "";
+      const allowedEvents = new Set([
+        "whatsapp_click",
+        "email_click",
+        "orientation_click",
+        "solutions_click",
+        "pdf_click",
+        "science_tab_click",
+        "knowledge_filter_click",
+        "learning_game_start",
+      ]);
+
+      if (!allowedEvents.has(event)) {
+        return new Response(null, { status: 204 });
+      }
+
+      env.ANALYTICS.writeDataPoint({
+        blobs: [event, url.hostname],
+        doubles: [1],
+        indexes: [event],
+      });
+      return new Response(null, { status: 204 });
+    }
 
     if (url.pathname === "/_vinext/image") {
       const allowedWidths = [...DEFAULT_DEVICE_SIZES, ...DEFAULT_IMAGE_SIZES];
