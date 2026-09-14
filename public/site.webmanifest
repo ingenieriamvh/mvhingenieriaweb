@@ -1,0 +1,19 @@
+{
+  "name": "Ingeniería MVH",
+  "short_name": "MVH",
+  "description": "Ingeniería para hacer visible lo que importa.",
+  "lang": "es-CO",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#f4f1e8",
+  "theme_color": "#061b31",
+  "icons": [
+    {
+      "src": "./assets/logo-mvh.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
