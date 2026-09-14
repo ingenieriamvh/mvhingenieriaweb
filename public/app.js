@@ -6,6 +6,39 @@
   const catalogs = window.MVH_CATALOGS ?? { departments: [], ciiuCatalog: {} };
   let toastTimer;
 
+  function trackEvent(event) {
+    if (!navigator.sendBeacon) return;
+    navigator.sendBeacon(
+      "/__analytics/event",
+      new Blob([JSON.stringify({ event })], { type: "application/json" }),
+    );
+  }
+
+  function configureAnalyticsEvents() {
+    document.addEventListener("click", (event) => {
+      const target = event.target.closest("a, button");
+      if (!target) return;
+
+      if (target.matches("[data-whatsapp-link]")) {
+        trackEvent("whatsapp_click");
+      } else if (target.matches("[data-email-link]")) {
+        trackEvent("email_click");
+      } else if (target.matches("[data-science]")) {
+        trackEvent("science_tab_click");
+      } else if (target.matches("[data-knowledge-filter]")) {
+        trackEvent("knowledge_filter_click");
+      } else if (target.matches("[data-learning-game]")) {
+        trackEvent("learning_game_start");
+      } else if (target.href?.includes("orientacion.html")) {
+        trackEvent("orientation_click");
+      } else if (target.href?.includes("soluciones.html")) {
+        trackEvent("solutions_click");
+      } else if (target.href?.toLowerCase().endsWith(".pdf")) {
+        trackEvent("pdf_click");
+      }
+    });
+  }
+
   function showToast(message) {
     const toast = document.querySelector("[data-toast]");
     if (!toast) return;
@@ -928,6 +961,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", () => {
+    configureAnalyticsEvents();
     configureContactChannels();
     configureMobileNavigation();
     configureScienceExplorer();
