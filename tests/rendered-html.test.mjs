@@ -46,6 +46,24 @@ test("la portada mantiene marca, límites y navegación comercial", async () => 
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
 });
 
+test("la experiencia identifica el perfil de pantalla y conserva una navegación móvil táctil", async () => {
+  const [app, styles] = await Promise.all([
+    readFile(new URL("../public/app.js", import.meta.url), "utf8"),
+    readFile(new URL("../public/styles.css", import.meta.url), "utf8"),
+  ]);
+
+  for (const profile of ["mobile", "tablet", "desktop", "large"]) {
+    assert.match(app, new RegExp(`id: "${profile}"`));
+  }
+  assert.match(app, /configureDisplayAdaptation/);
+  assert.match(app, /configureMobileDock/);
+  assert.match(app, /window\.addEventListener\("resize", scheduleProfile/);
+  assert.match(styles, /html\[data-display-profile="mobile"\] \.mobile-dock/);
+  assert.match(styles, /min-height: 56px/);
+  assert.match(styles, /min-width: 1600px/);
+  assert.match(styles, /prefers-reduced-motion: reduce/);
+});
+
 test("el paquete público contiene las dieciséis páginas controladas", async () => {
   const files = await readdir(new URL("../public/", import.meta.url));
   const htmlFiles = files.filter((file) => file.endsWith(".html")).sort();

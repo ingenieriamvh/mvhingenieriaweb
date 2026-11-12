@@ -161,6 +161,125 @@
     });
   }
 
+  /**
+   * Clasifica el contexto de visualización por el espacio disponible, no por
+   * una supuesta marca o modelo del dispositivo. Así una misma página puede
+   * adaptarse de inmediato a móvil, tableta, computador y pantallas amplias
+   * sin recolectar datos del visitante.
+   */
+  function configureDisplayAdaptation() {
+    const root = document.documentElement;
+    const header = document.querySelector(".site-header");
+    const brandCopy = header?.querySelector(".brand > span");
+    let profileNode = header?.querySelector("[data-display-profile]");
+    if (!profileNode && brandCopy) {
+      profileNode = document.createElement("em");
+      profileNode.className = "display-profile";
+      profileNode.dataset.displayProfile = "";
+      brandCopy.append(profileNode);
+    }
+
+    const resolveProfile = () => {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+
+      if (width <= 600) {
+        return {
+          id: "mobile",
+          label: "Móvil",
+          description: "Controles táctiles y acciones directas.",
+        };
+      }
+      if (width <= 1080) {
+        return {
+          id: "tablet",
+          label: "Tableta",
+          description: "Lectura y operación táctil equilibradas.",
+        };
+      }
+      if (width >= 1600 && height >= 900) {
+        return {
+          id: "large",
+          label: "Gran formato",
+          description: "Composición ampliada para monitor o TV.",
+        };
+      }
+      return {
+        id: "desktop",
+        label: "Computador",
+        description: "Lectura editorial y navegación de escritorio.",
+      };
+    };
+
+    const applyProfile = () => {
+      const profile = resolveProfile();
+      const orientation =
+        window.innerWidth > window.innerHeight ? "landscape" : "portrait";
+      root.dataset.displayProfile = profile.id;
+      root.dataset.displayOrientation = orientation;
+      root.style.setProperty("--viewport-width", `${window.innerWidth}px`);
+      root.style.setProperty("--viewport-height", `${window.innerHeight}px`);
+
+      if (profileNode) {
+        profileNode.textContent = profile.label;
+        profileNode.title = `${profile.description} Orientación: ${
+          orientation === "landscape" ? "horizontal" : "vertical"
+        }.`;
+        profileNode.setAttribute(
+          "aria-label",
+          `Experiencia ajustada a ${profile.label}, orientación ${
+            orientation === "landscape" ? "horizontal" : "vertical"
+          }.`,
+        );
+      }
+    };
+
+    let frame;
+    const scheduleProfile = () => {
+      window.cancelAnimationFrame(frame);
+      frame = window.requestAnimationFrame(applyProfile);
+    };
+
+    applyProfile();
+    window.addEventListener("resize", scheduleProfile, { passive: true });
+    window.addEventListener("orientationchange", scheduleProfile, {
+      passive: true,
+    });
+  }
+
+  function configureMobileDock() {
+    if (document.querySelector("[data-mobile-dock]")) return;
+
+    const dock = document.createElement("nav");
+    dock.className = "mobile-dock";
+    dock.dataset.mobileDock = "";
+    dock.setAttribute("aria-label", "Acciones rápidas");
+
+    const actions = [
+      { href: "./index.html", label: "Inicio", mark: "01" },
+      { href: "./soluciones.html", label: "Soluciones", mark: "02" },
+      { href: "./conocimiento.html", label: "Conocimiento", mark: "03" },
+      { href: "#", label: "WhatsApp", mark: "↗", whatsapp: true },
+    ];
+
+    actions.forEach((action) => {
+      const link = document.createElement("a");
+      link.href = action.href;
+      link.className = action.whatsapp ? "mobile-dock-contact" : "";
+      if (action.whatsapp) link.dataset.whatsappLink = "";
+
+      const mark = document.createElement("span");
+      mark.setAttribute("aria-hidden", "true");
+      mark.textContent = action.mark;
+      const label = document.createElement("b");
+      label.textContent = action.label;
+      link.append(mark, label);
+      dock.append(link);
+    });
+
+    document.body.append(dock);
+  }
+
   function configureScienceExplorer() {
     const tabs = Array.from(document.querySelectorAll("[data-science]"));
     const label = document.querySelector("[data-science-label]");
@@ -962,8 +1081,10 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     configureAnalyticsEvents();
+    configureMobileDock();
     configureContactChannels();
     configureMobileNavigation();
+    configureDisplayAdaptation();
     configureScienceExplorer();
     configureKnowledgeLibrary();
     configureLearningGames();
