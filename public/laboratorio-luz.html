@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Laboratorio MVH: indicadores ambientales actualizados, recurso solar, fuentes de luz y familias de luminarias explicados con contexto técnico."
+    />
+    <meta name="theme-color" content="#061b31" />
+    <meta name="robots" content="noindex, nofollow" data-prototype-robots />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:title" content="Laboratorio de luz y ambiente | Ingeniería MVH" />
+    <meta
+      property="og:description"
+      content="Observe el ambiente lumínico y explore tecnologías de iluminación sin perder el contexto técnico."
+    />
+    <meta name="twitter:card" content="summary" />
+    <title>Laboratorio de luz y ambiente | Ingeniería MVH</title>
+    <link rel="icon" href="./assets/logo-mvh.png" type="image/png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./mvh-site-settings.js" defer></script>
+    <script src="./logic.js" defer></script>
+    <script src="./app.js" defer></script>
+    <script src="./laboratorio-luz.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header" data-header>
+      <a class="brand" href="./index.html" aria-label="Ingeniería MVH, inicio">
+        <img src="./assets/logo-mvh.png" alt="" width="54" height="54" />
+        <span><strong>INGENIERÍA MVH</strong><small>Ingeniería en iluminación</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" data-menu-toggle>
+        <span aria-hidden="true">☰</span><span class="sr-only">Abrir menú</span>
+      </button>
+      <nav id="main-navigation" class="main-navigation" aria-label="Principal">
+        <a href="./soluciones.html">Soluciones</a>
+        <a href="./sectores.html">Sectores</a>
+        <a href="./metodo.html">Método MVH</a>
+        <a href="./ciencia.html" aria-current="page">Ciencia de la luz</a>
+        <a href="./nosotros.html">Nosotros</a>
+        <a href="./conocimiento.html">Conocimiento</a>
+        <a href="./contacto.html">Contacto</a>
+      </nav>
+      <div class="header-actions">
+        <div class="language" aria-label="Idioma"><span aria-current="true">ES</span><span aria-disabled="true" title="Versión en inglés pendiente">EN</span></div>
+        <a class="button button-primary button-small" href="./orientacion.html">Solicitar orientación</a>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="page-hero lab-hero">
+        <div class="page-hero-image visual-lab" aria-hidden="true"></div>
+        <div class="page-hero-overlay"></div>
+        <div class="shell page-hero-content">
+          <p class="eyebrow light">Laboratorio MVH</p>
+          <h1>La luz cambia con el cielo, el lugar y la tecnología.</h1>
+          <p>
+            Explore indicadores ambientales actualizados y comprenda cómo se
+            diferencian las fuentes de luz y las luminarias antes de tomar una decisión.
+          </p>
+          <div class="button-row">
+            <a class="button button-primary" href="#ambiente">Ver ambiente actualizado</a>
+            <a class="button button-outline-light" href="#fuentes">Explorar tecnología</a>
+          </div>
+        </div>
+        <p class="image-disclaimer">Visualización educativa · los datos no sustituyen mediciones en sitio</p>
+      </section>
+
+      <section class="lab-navigation" aria-label="Secciones del laboratorio">
+        <div class="shell" role="tablist" aria-label="Laboratorio de luz y ambiente">
+          <button type="button" role="tab" aria-selected="true" aria-controls="ambiente" data-lab-tab="ambiente">
+            <span>01</span> Ambiente actualizado
+          </button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="fuentes" data-lab-tab="fuentes">
+            <span>02</span> Fuentes de luz
+          </button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="luminarias" data-lab-tab="luminarias">
+            <span>03</span> Luminarias
+          </button>
+        </div>
+      </section>
+
+      <section id="ambiente" class="lab-panel page-section" role="tabpanel" data-lab-panel="ambiente" aria-labelledby="environment-title">
+        <div class="shell">
+          <header class="section-heading split-heading">
+            <div>
+              <p class="eyebrow">Observatorio lumínico y ambiental</p>
+              <h2 id="environment-title">Una lectura actualizada del cielo y el ambiente.</h2>
+            </div>
+            <p>
+              La nubosidad, la radiación, la humedad y el horario ayudan a comprender
+              el contexto de la luz natural, pero no reemplazan una medición en el lugar.
+            </p>
+          </header>
+
+          <div class="weather-controls" aria-label="Ubicación para consultar condiciones">
+            <label for="weather-city">Ubicación de referencia</label>
+            <select id="weather-city" data-weather-city>
+              <option value="4.711|-74.0721|Bogotá, D.C.">Bogotá, D.C.</option>
+              <option value="6.2442|-75.5812|Medellín">Medellín</option>
+              <option value="3.4516|-76.5320|Cali">Cali</option>
+              <option value="10.9685|-74.7813|Barranquilla">Barranquilla</option>
+              <option value="10.3910|-75.4794|Cartagena de Indias">Cartagena de Indias</option>
+              <option value="1.2136|-77.2811|Pasto">Pasto</option>
+              <option value="4.1420|-73.6266|Villavicencio">Villavicencio</option>
+              <option value="1.8067|-78.7647|Tumaco">Tumaco</option>
+              <option value="5.6947|-76.6611|Quibdó">Quibdó</option>
+              <option value="-4.2153|-69.9406|Leticia">Leticia</option>
+            </select>
+            <button class="button button-dark button-small" type="button" data-use-location>Usar mi ubicación</button>
+            <button class="button button-outline-dark button-small" type="button" data-weather-refresh>Actualizar</button>
+            <p class="weather-status" role="status" aria-live="polite" data-weather-status>Preparando la consulta…</p>
+          </div>
+
+          <div class="environment-summary">
+            <div>
+              <span>Ubicación consultada</span>
+              <strong data-weather-place>—</strong>
+            </div>
+            <div>
+              <span>Referencia temporal</span>
+              <strong data-weather-time>—</strong>
+            </div>
+            <div>
+              <span>Estado</span>
+              <strong data-weather-daylight>—</strong>
+            </div>
+          </div>
+
+          <div class="environment-grid" aria-label="Indicadores ambientales actualizados">
+            <article><span>Temperatura</span><strong data-weather-value="temperature">—</strong><small>Ambiente exterior a 2 m</small></article>
+            <article><span>Humedad relativa</span><strong data-weather-value="humidity">—</strong><small>Condición atmosférica</small></article>
+            <article><span>Nubosidad</span><strong data-weather-value="cloud">—</strong><small>Cobertura total estimada</small></article>
+            <article><span>Precipitación</span><strong data-weather-value="precipitation">—</strong><small>Intervalo actual del modelo</small></article>
+            <article><span>Viento</span><strong data-weather-value="wind">—</strong><small>Velocidad a 10 m</small></article>
+            <article class="solar-metric"><span>Radiación global</span><strong data-weather-value="ghi">—</strong><small>GHI sobre plano horizontal</small></article>
+            <article class="solar-metric"><span>Radiación directa normal</span><strong data-weather-value="dni">—</strong><small>DNI estimada</small></article>
+            <article class="solar-metric"><span>Radiación difusa</span><strong data-weather-value="dhi">—</strong><small>DHI sobre plano horizontal</small></article>
+          </div>
+
+          <div class="solar-day-card">
+            <div class="solar-day-heading">
+              <div>
+                <p class="eyebrow light">Recurso solar de hoy</p>
+                <h3>Tiempo disponible y duración estimada de sol.</h3>
+              </div>
+              <p>El brillo solar o heliofanía expresa el tiempo con radiación solar directa suficiente; no es una lectura en lux.</p>
+            </div>
+            <dl class="solar-day-values">
+              <div><dt>Amanecer</dt><dd data-weather-daily="sunrise">—</dd></div>
+              <div><dt>Atardecer</dt><dd data-weather-daily="sunset">—</dd></div>
+              <div><dt>Duración del día</dt><dd data-weather-daily="daylight">—</dd></div>
+              <div><dt>Brillo solar estimado</dt><dd data-weather-daily="sunshine">—</dd></div>
+              <div><dt>Fracción de sol</dt><dd data-weather-daily="sunshare">—</dd></div>
+              <div><dt>Radiación diaria</dt><dd data-weather-daily="radiationSum">—</dd></div>
+            </dl>
+          </div>
+
+          <section class="solar-timeline-section" aria-labelledby="solar-timeline-title">
+            <div>
+              <p class="eyebrow">Próximas horas</p>
+              <h3 id="solar-timeline-title">Radiación y nubosidad a lo largo del día.</h3>
+            </div>
+            <ol class="solar-timeline" data-solar-timeline aria-label="Evolución horaria estimada"></ol>
+          </section>
+
+          <div class="bioclimate-grid" aria-label="Relación bioclimática con la iluminación">
+            <article><span>01</span><h3>Luz natural</h3><p>Orientación, apertura, cielo y hora modifican el aporte y su distribución interior.</p></article>
+            <article><span>02</span><h3>Carga térmica</h3><p>Ganancia solar, temperatura y control de fachada deben revisarse junto con el confort.</p></article>
+            <article><span>03</span><h3>Variabilidad</h3><p>Nubes, lluvia y estación cambian la disponibilidad; el control debe responder sin parpadeo.</p></article>
+            <article><span>04</span><h3>Operación</h3><p>Horarios, mantenimiento, corrosión, polvo y humedad influyen en la solución real.</p></article>
+          </div>
+
+          <aside class="data-provenance">
+            <div>
+              <strong>Qué está viendo</strong>
+              <p>Datos meteorológicos modelados y actualizados mediante Open-Meteo. Las condiciones actuales se basan en información de modelos con resolución temporal de 15 minutos.</p>
+            </div>
+            <div>
+              <strong>Qué no está viendo</strong>
+              <p>No son mediciones realizadas por MVH, no representan una estación instalada en el predio y no permiten declarar cumplimiento de un proyecto.</p>
+            </div>
+            <div>
+              <strong>Fuentes para ampliar</strong>
+              <p><a href="https://open-meteo.com/en/docs" target="_blank" rel="noopener noreferrer">Metodología Open-Meteo</a> · <a href="https://www.ideam.gov.co/AtlasWeb/" target="_blank" rel="noopener noreferrer">Atlas climatológico IDEAM</a> · <a href="https://bart.ideam.gov.co/indiecosistemas/ind/clima/brillo.html" target="_blank" rel="noopener noreferrer">Brillo solar IDEAM</a></p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="fuentes" class="lab-panel page-section page-section-soft" role="tabpanel" data-lab-panel="fuentes" aria-labelledby="sources-title">
+        <div class="shell">
+          <header class="section-heading split-heading">
+            <div>
+              <p class="eyebrow">Fuentes de luz</p>
+              <h2 id="sources-title">La tecnología genera luz; el proyecto define cómo usarla.</h2>
+            </div>
+            <p>Una fuente no se elige únicamente por potencia, tono aparente o precio. Debe relacionarse con óptica, tarea, control, ambiente, mantenimiento y ciclo de vida.</p>
+          </header>
+          <div class="source-family-grid">
+            <details class="source-family" open>
+              <summary><span>Natural</span><strong>Luz diurna</strong><small>Variable · gratuita · bioclimática</small></summary>
+              <div><p>Aporta conexión exterior y ahorro potencial, pero cambia con orientación, hora, clima, obstrucciones y fachada.</p><ul><li>Revisar deslumbramiento y carga térmica.</li><li>Coordinar protecciones solares y controles.</li><li>Medir o simular bajo condiciones definidas.</li></ul></div>
+            </details>
+            <details class="source-family">
+              <summary><span>Estado sólido</span><strong>LED</strong><small>Eficiente · controlable · diversa</small></summary>
+              <div><p>Es la tecnología dominante, pero su desempeño depende del módulo, driver, gestión térmica, óptica y calidad de fabricación.</p><ul><li>Verificar fotometría y temperatura de color.</li><li>Revisar reproducción cromática y parpadeo.</li><li>Confirmar vida útil y condiciones ambientales.</li></ul></div>
+            </details>
+            <details class="source-family">
+              <summary><span>Descarga baja presión</span><strong>Fluorescente</strong><small>Legado · difusa · contiene mercurio</small></summary>
+              <div><p>Permanece en instalaciones existentes. Su sustitución exige revisar balastos, compatibilidad, disposición y nueva distribución fotométrica.</p><ul><li>No asumir equivalencia por longitud o potencia.</li><li>Gestionar residuos y contenido de mercurio.</li><li>Verificar el efecto del retrofit en la luminaria.</li></ul></div>
+            </details>
+            <details class="source-family">
+              <summary><span>Alta intensidad</span><strong>Descarga HID</strong><small>Grandes áreas · arranque · mantenimiento</small></summary>
+              <div><p>Halogenuros metálicos, sodio y otras tecnologías siguen presentes en industria, deporte y exterior.</p><ul><li>Considerar encendido y reencendido.</li><li>Revisar color, depreciación y control.</li><li>Comparar la óptica instalada, no solo la fuente.</li></ul></div>
+            </details>
+            <details class="source-family">
+              <summary><span>Térmica</span><strong>Halógena e incandescente</strong><small>Excelente color · baja eficacia · calor</small></summary>
+              <div><p>Puede mantenerse en aplicaciones muy particulares, pero su consumo, temperatura y vida útil suelen limitarla.</p><ul><li>Evaluar carga térmica y riesgo de contacto.</li><li>Evitar sustituciones sin revisar regulación.</li><li>Usar solo cuando el propósito lo justifique.</li></ul></div>
+            </details>
+          </div>
+          <div class="technical-checklist">
+            <div><p class="eyebrow light">Antes de especificar</p><h3>Una ficha técnica debe permitir comprobar la decisión.</h3></div>
+            <ul>
+              <li>Flujo, potencia y eficacia declarada.</li>
+              <li>Distribución espectral, temperatura y reproducción de color.</li>
+              <li>Parpadeo, regulación y compatibilidad del control.</li>
+              <li>Vida útil, depreciación y gestión térmica.</li>
+              <li>Fotobiología, certificados y trazabilidad del producto.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="luminarias" class="lab-panel page-section" role="tabpanel" data-lab-panel="luminarias" aria-labelledby="luminaire-title">
+        <div class="shell">
+          <header class="section-heading split-heading">
+            <div>
+              <p class="eyebrow">Luminarias</p>
+              <h2 id="luminaire-title">La luminaria controla, protege y distribuye la luz.</h2>
+            </div>
+            <p>Dos equipos con la misma potencia pueden producir resultados muy distintos por su óptica, montaje, control, protección y relación con el espacio.</p>
+          </header>
+
+          <div class="luminaire-category-grid">
+            <article><span>Interior general</span><h3>Panel, lineal y downlight</h3><p>Oficinas, educación, comercio y circulación. La distribución y el control del deslumbramiento importan tanto como la potencia.</p></article>
+            <article><span>Industrial</span><h3>Campana y lineal estanca</h3><p>Alturas, polvo, humedad, temperatura, vibración, mantenimiento y tarea definen la selección.</p></article>
+            <article><span>Exterior</span><h3>Proyector, bolardo y mural</h3><p>Distribución, intrusión, contaminación lumínica, corrosión y orientación deben quedar controladas.</p></article>
+            <article><span>Alumbrado público</span><h3>Vial y peatonal</h3><p>Geometría, clase de iluminación, superficie, uniformidad, deslumbramiento y mantenimiento se estudian como sistema.</p></article>
+            <article><span>Localizada</span><h3>Tarea y precisión</h3><p>Acerca luz al plano de trabajo, pero debe evitar contrastes extremos, sombras y reflejos molestos.</p></article>
+            <article><span>Emergencia</span><h3>Autónoma o centralizada</h3><p>Función, modo, autonomía, señalización, prueba y mantenimiento deben comprobarse.</p></article>
+            <article><span>Deportiva</span><h3>Proyección especializada</h3><p>Jugadores, público, cámaras, trayectorias, control de deslumbramiento y operación requieren análisis conjunto.</p></article>
+            <article><span>Áreas especiales</span><h3>Producto certificado para el ambiente</h3><p>La clasificación del área, temperatura, agentes químicos o riesgo de explosión determinan requisitos adicionales.</p></article>
+          </div>
+
+          <section class="selection-path" aria-labelledby="selection-title">
+            <div><p class="eyebrow light">Ruta de selección</p><h3 id="selection-title">Del problema visual al equipo verificable.</h3></div>
+            <ol>
+              <li><span>01</span><strong>Necesidad</strong><small>Qué debe verse, producirse, recorrerse o protegerse.</small></li>
+              <li><span>02</span><strong>Ambiente</strong><small>Altura, montaje, polvo, agua, calor, corrosión y acceso.</small></li>
+              <li><span>03</span><strong>Óptica</strong><small>Distribución, uniformidad, sombras, contraste y deslumbramiento.</small></li>
+              <li><span>04</span><strong>Operación</strong><small>Horario, control, energía, mantenimiento y contingencia.</small></li>
+              <li><span>05</span><strong>Evidencia</strong><small>Fotometría, certificados, planos, memoria y verificación final.</small></li>
+            </ol>
+          </section>
+
+          <div class="editorial-split luminaire-limits">
+            <div><p class="eyebrow">Clasificaciones que conviene reconocer</p><h2>Montaje, distribución y protección responden preguntas distintas.</h2><p class="section-lead">Una luminaria puede clasificarse por instalación, uso, óptica, grado de protección, clase eléctrica, control, fuente o ambiente. Ninguna etiqueta aislada demuestra que sea adecuada.</p><ul class="check-list"><li>Empotrada, sobrepuesta, suspendida, mural, poste o piso.</li><li>Directa, indirecta, simétrica, asimétrica, extensiva o concentrada.</li><li>Interior, exterior, vial, industrial, deportiva, emergencia o especial.</li><li>Protección frente a ingreso, impacto, corrosión y condición eléctrica.</li></ul></div>
+            <aside><span>Límite y control</span><h3>Información, no prescripción</h3><p>Este atlas explica familias de productos. No recomienda referencias comerciales ni reemplaza la especificación, el diseño, la certificación del producto o la revisión del proyecto.</p></aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-cta">
+        <div class="shell">
+          <div><p class="eyebrow light">Convierta información en alcance</p><h2>¿Necesita evaluar, diseñar o comparar una solución?</h2><p>MVH organiza la necesidad, las condiciones reales y la evidencia antes de recomendar una intervención.</p></div>
+          <div class="button-row"><a class="button button-primary" href="./orientacion.html?linea=diseno-verificacion">Solicitar orientación</a><a class="button button-outline-light" data-whatsapp-link href="#">Hablar por WhatsApp</a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div><strong>INGENIERÍA MVH</strong><span>Ingeniería en iluminación</span></div>
+        <div><strong>Contacto</strong><a data-whatsapp-link href="#">WhatsApp: <span data-whatsapp-display></span></a><a data-email-link href="#"><span data-email-display></span></a></div>
+        <div><strong>Acceso</strong><a href="./acceso-mvh-digital.html">Información de MVH Digital</a><button type="button" data-digital-link>Ingresar</button></div>
+        <div><strong>Información</strong><a href="./conocimiento.html">Centro de conocimiento</a><a href="./ciencia.html">Ciencia de la luz</a><span>Privacidad y términos pendientes de aprobación jurídica</span></div>
+      </div>
+    </footer>
+    <div class="toast" role="status" aria-live="polite" data-toast hidden></div>
+  </body>
+</html>

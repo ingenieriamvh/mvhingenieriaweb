@@ -1,0 +1,871 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Centro de conocimiento de Ingeniería MVH: normativa explicada, consultas resueltas, curiosidades y aprendizaje práctico sobre iluminación."
+    />
+    <meta name="theme-color" content="#061b31" />
+    <meta name="robots" content="noindex, nofollow" data-prototype-robots />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:title" content="Centro de conocimiento | Ingeniería MVH" />
+    <meta
+      property="og:description"
+      content="Información útil sobre iluminación, explicada con fuente, fecha, contexto y límites."
+    />
+    <meta name="twitter:card" content="summary" />
+    <title>Centro de conocimiento | Ingeniería MVH</title>
+    <link rel="icon" href="./assets/logo-mvh.png" type="image/png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./mvh-site-settings.js" defer></script>
+    <script src="./logic.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header" data-header>
+      <a class="brand" href="./index.html" aria-label="Ingeniería MVH, inicio">
+        <img src="./assets/logo-mvh.png" alt="" width="54" height="54" />
+        <span>
+          <strong>INGENIERÍA MVH</strong>
+          <small>Ingeniería en iluminación</small>
+        </span>
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+        data-menu-toggle
+      >
+        <span aria-hidden="true">☰</span>
+        <span class="sr-only">Abrir menú</span>
+      </button>
+      <nav id="main-navigation" class="main-navigation" aria-label="Principal">
+        <a href="./soluciones.html">Soluciones</a>
+        <a href="./sectores.html">Sectores</a>
+        <a href="./metodo.html">Método MVH</a>
+        <a href="./ciencia.html">Ciencia de la luz</a>
+        <a href="./nosotros.html">Nosotros</a>
+        <a href="./conocimiento.html" aria-current="page">Conocimiento</a>
+        <a href="./contacto.html">Contacto</a>
+      </nav>
+      <div class="header-actions">
+        <div class="language" aria-label="Idioma">
+          <span aria-current="true">ES</span>
+          <span aria-disabled="true" title="Versión en inglés pendiente">EN</span>
+        </div>
+        <a class="button button-primary button-small" href="./orientacion.html">
+          Solicitar orientación
+        </a>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="page-hero">
+        <div class="page-hero-image glare" aria-hidden="true"></div>
+        <div class="page-hero-overlay"></div>
+        <div class="shell page-hero-content">
+          <p class="eyebrow light">Centro de conocimiento MVH</p>
+          <h1>Aprender sobre la luz también ayuda a decidir mejor.</h1>
+          <p>
+            Normativa explicada, consultas frecuentes, curiosidades y
+            aprendizaje práctico para comprender la iluminación sin perder el
+            contexto técnico.
+          </p>
+          <div class="button-row">
+            <a class="button button-primary" href="#recursos">
+              Explorar contenidos
+            </a>
+            <a class="button button-outline-light" data-whatsapp-link href="#">
+              Enviar una pregunta
+            </a>
+          </div>
+        </div>
+        <p class="image-disclaimer">
+          Imagen conceptual aprobada · no corresponde a un proyecto real
+        </p>
+      </section>
+
+      <section class="page-section shell knowledge-intro" aria-labelledby="knowledge-title">
+        <header class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Información útil</p>
+            <h2 id="knowledge-title">Cuatro maneras de acercarse a la iluminación.</h2>
+          </div>
+          <p>
+            El visitante puede empezar por una regla, una pregunta, un dato
+            curioso o una guía práctica. Cada contenido identifica su alcance y
+            evita convertir una explicación general en un diagnóstico.
+          </p>
+        </header>
+        <div class="knowledge-route-grid">
+          <a href="#recursos" data-knowledge-shortcut="normativa">
+            <span>01</span>
+            <strong>Normativa y criterios</strong>
+            <small>Qué regula, cómo se interpreta y cuándo aplica.</small>
+          </a>
+          <a href="#recursos" data-knowledge-shortcut="consultas">
+            <span>02</span>
+            <strong>Consultas resueltas</strong>
+            <small>Respuestas claras a preguntas frecuentes.</small>
+          </a>
+          <a href="#recursos" data-knowledge-shortcut="curiosidades">
+            <span>03</span>
+            <strong>Curiosidades de la luz</strong>
+            <small>Conceptos que cambian la manera de observar.</small>
+          </a>
+          <a href="#recursos" data-knowledge-shortcut="aprendizaje">
+            <span>04</span>
+            <strong>Aprendizaje práctico</strong>
+            <small>Guías breves para preparar mejores decisiones.</small>
+          </a>
+        </div>
+
+        <a class="knowledge-game-route" href="#juegos">
+          <span aria-hidden="true">05</span>
+          <div>
+            <strong>Laboratorio de luz</strong>
+            <small>
+              Aprenda jugando a reconocer señales, cuestionar mitos y ubicar
+              correctamente una referencia técnica.
+            </small>
+          </div>
+          <b>Iniciar un reto <span aria-hidden="true">→</span></b>
+        </a>
+
+        <article class="official-source-card" aria-labelledby="official-retilap-title">
+          <div>
+            <p class="eyebrow light">Fuente oficial · Ministerio de Minas y Energía</p>
+            <h3 id="official-retilap-title">RETILAP vigente en Colombia</h3>
+            <p>
+              El Ministerio informa que el Reglamento Técnico de Iluminación y
+              Alumbrado Público fue modificado mediante la Resolución 40286 del
+              23 de junio de 2026 y está organizado en cuatro libros y anexos.
+            </p>
+            <ul>
+              <li>Aspectos generales.</li>
+              <li>Productos objeto del RETILAP.</li>
+              <li>Instalaciones de sistemas de iluminación.</li>
+              <li>Evaluación de la conformidad y anexos.</li>
+            </ul>
+          </div>
+          <div class="official-source-actions">
+            <span>Fuente consultada · 31/07/2026</span>
+            <a
+              class="button button-primary"
+              href="https://www.minenergia.gov.co/es/misional/energia-electrica-2/reglamentos-tecnicos/reglamento-t%C3%A9cnico-de-iluminaci%C3%B3n-y-alumbrado-p%C3%BAblico-retilap/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Consultar el RETILAP en el sitio oficial del Ministerio de Minas y Energía, abre en una nueva pestaña"
+            >
+              Consultar en MinEnergía ↗
+            </a>
+            <a
+              class="button button-outline-light"
+              href="https://www.minenergia.gov.co/documents/15917/Resoluci%C3%B3n_Modificatoria_RETILAP_2026_Versi%C3%B3n_Final_Numerada_Compilada.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir la Resolución 40286 de 2026 compilada en el sitio oficial del Ministerio, abre en una nueva pestaña"
+            >
+              Ver resolución compilada ↗
+            </a>
+            <small>
+              El enlace oficial permite verificar actualizaciones, trazabilidad
+              y documentos vigentes directamente en la autoridad competente.
+            </small>
+          </div>
+        </article>
+      </section>
+
+      <section
+        class="page-section shell standards-directory"
+        aria-labelledby="standards-directory-title"
+      >
+        <header class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Mapa normativo y técnico</p>
+            <h2 id="standards-directory-title">
+              No todas las referencias tienen la misma jerarquía.
+            </h2>
+          </div>
+          <p>
+            MVH identifica la fuente, la versión, el alcance y la función de
+            cada documento antes de aplicarlo a un servicio o proyecto.
+          </p>
+        </header>
+
+        <div class="standards-map">
+          <article class="standard-group">
+            <header>
+              <span>Colombia</span>
+              <h3>Normativa y referencias nacionales</h3>
+              <p>Fuentes legales, reglamentarias y técnicas colombianas.</p>
+            </header>
+            <div class="standard-list">
+              <a
+                data-standard-entry
+                href="https://www.minenergia.gov.co/es/misional/energia-electrica-2/reglamentos-tecnicos/reglamento-t%C3%A9cnico-de-iluminaci%C3%B3n-y-alumbrado-p%C3%BAblico-retilap/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>RETILAP</span>
+                <div>
+                  <strong>Iluminación y alumbrado público</strong>
+                  <small>Ministerio de Minas y Energía</small>
+                </div>
+                <b>Obligatorio según alcance</b>
+              </a>
+              <a
+                data-standard-entry
+                href="https://www.minenergia.gov.co/es/misional/energia-electrica-2/reglamentos-tecnicos/reglamento-t%C3%A9cnico-de-instalaciones-el%C3%A9ctricas-retie/?concepto=960"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>RETIE</span>
+                <div>
+                  <strong>Instalaciones eléctricas relacionadas</strong>
+                  <small>Ministerio de Minas y Energía</small>
+                </div>
+                <b>Según alcance eléctrico</b>
+              </a>
+              <a
+                data-standard-entry
+                href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?emergente=1&amp;i=72173"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>D. 1072</span>
+                <div>
+                  <strong>Sistema de Gestión de SST</strong>
+                  <small>Gestor Normativo · Función Pública</small>
+                </div>
+                <b>Marco obligatorio SG-SST</b>
+              </a>
+              <a
+                data-standard-entry
+                href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=1177"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>Ley 9</span>
+                <div>
+                  <strong>Condiciones de iluminación en el trabajo</strong>
+                  <small>Gestor Normativo · Función Pública</small>
+                </div>
+                <b>Marco legal nacional</b>
+              </a>
+              <a
+                data-standard-entry
+                href="https://tienda.icontec.org/sectores/medio-ambiente-proteccion-de-la-salud-seguridad/seguridad-ocupacional-higiene-industrial.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>GTC 45</span>
+                <div>
+                  <strong>Peligros y valoración de riesgos</strong>
+                  <small>Catálogo oficial ICONTEC</small>
+                </div>
+                <b>Guía técnica</b>
+              </a>
+            </div>
+          </article>
+
+          <article class="standard-group">
+            <header>
+              <span>Internacional</span>
+              <h3>Referentes técnicos complementarios</h3>
+              <p>
+                Se aplican cuando sean pertinentes, contractuales o necesarios
+                para justificar técnicamente el análisis.
+              </p>
+            </header>
+            <div class="standard-list">
+              <a
+                data-standard-entry
+                href="https://www.iso.org/standard/76342.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>ISO/CIE 8995-1:2025</span>
+                <div>
+                  <strong>Lugares de trabajo interiores</strong>
+                  <small>ISO · Comisión Internacional de Iluminación</small>
+                </div>
+                <b>Complementaria o contractual</b>
+              </a>
+              <a
+                data-standard-entry
+                href="https://www.iso.org/standard/70593.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>ISO/CIE 8995-3:2018</span>
+                <div>
+                  <strong>Seguridad en lugares de trabajo exteriores</strong>
+                  <small>ISO · Comisión Internacional de Iluminación</small>
+                </div>
+                <b>Complementaria o contractual</b>
+              </a>
+              <a
+                data-standard-entry
+                href="https://www.iso.org/standard/45801.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>ISO 30061:2007</span>
+                <div>
+                  <strong>Iluminación de emergencia</strong>
+                  <small>ISO · CIE S 020/E:2007</small>
+                </div>
+                <b>Referencia internacional</b>
+              </a>
+              <a
+                data-standard-entry
+                href="https://www.cie.co.at/publications/guide-limitation-effects-obtrusive-light-outdoor-lighting-installations-2nd-edition"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>CIE 150:2017</span>
+                <div>
+                  <strong>Luz intrusiva en instalaciones exteriores</strong>
+                  <small>Comisión Internacional de Iluminación</small>
+                </div>
+                <b>Guía técnica internacional</b>
+              </a>
+              <a
+                data-standard-entry
+                href="https://knowledge.bsigroup.com/products/light-and-lighting-lighting-of-work-places-indoor-work-places-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>Familia EN 12464</span>
+                <div>
+                  <strong>Iluminación de lugares de trabajo</strong>
+                  <small>Consultar edición nacional licenciada vigente</small>
+                </div>
+                <b>Referencia europea</b>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <aside class="standards-rule">
+          <strong>Regla de aplicación MVH</strong>
+          <p>
+            Una referencia internacional no se presenta como obligación
+            colombiana automática. Su uso debe justificarse por pertinencia,
+            contrato, incorporación normativa, buena práctica o necesidad
+            técnica, y quedar registrado en el alcance y el informe.
+          </p>
+        </aside>
+      </section>
+
+      <section
+        class="page-section learning-lab"
+        id="juegos"
+        aria-labelledby="learning-lab-title"
+      >
+        <div class="shell">
+          <header class="section-heading split-heading learning-lab-heading">
+            <div>
+              <p class="eyebrow light">Laboratorio de luz</p>
+              <h2 id="learning-lab-title">Observe, elija y descubra el criterio.</h2>
+            </div>
+            <p>
+              Tres retos breves para aprender desde situaciones reconocibles.
+              Funcionan con teclado, pantalla táctil y sin registrar resultados.
+            </p>
+          </header>
+
+          <div
+            class="game-selector"
+            role="group"
+            aria-label="Elegir juego educativo"
+          >
+            <button
+              type="button"
+              aria-pressed="true"
+              data-learning-game="detective"
+            >
+              <span>01</span>
+              <strong>Detective de la luz</strong>
+              <small>Reconozca la condición observable.</small>
+            </button>
+            <button
+              type="button"
+              aria-pressed="false"
+              data-learning-game="mitos"
+            >
+              <span>02</span>
+              <strong>Mito o criterio</strong>
+              <small>Separe intuiciones de criterios técnicos.</small>
+            </button>
+            <button
+              type="button"
+              aria-pressed="false"
+              data-learning-game="fuentes"
+            >
+              <span>03</span>
+              <strong>Ubique la referencia</strong>
+              <small>Identifique la función de cada documento.</small>
+            </button>
+          </div>
+
+          <article class="game-stage" data-game-stage aria-labelledby="game-title">
+            <div class="game-stage-copy">
+              <div class="game-stage-meta">
+                <span data-game-kicker>Reto educativo</span>
+                <span data-game-score>Puntaje: 0</span>
+              </div>
+              <h3 id="game-title" data-game-title>Detective de la luz</h3>
+              <p data-game-description>
+                Lea la situación e identifique la condición que conviene investigar.
+              </p>
+            </div>
+
+            <div class="game-progress-copy">
+              <span data-game-progress-text>Situación 1 de 4</span>
+              <span>Una respuesta por reto</span>
+            </div>
+            <div
+              class="game-progress-track"
+              role="progressbar"
+              aria-label="Progreso del juego"
+              aria-valuemin="0"
+              aria-valuemax="4"
+              aria-valuenow="1"
+              data-game-progressbar
+            >
+              <span data-game-progress-fill></span>
+            </div>
+
+            <div class="game-question" data-game-question-wrap>
+              <p class="game-question-label">¿Qué observa?</p>
+              <h4 data-game-question></h4>
+              <div class="game-options" data-game-options></div>
+            </div>
+
+            <div
+              class="game-feedback"
+              data-game-feedback
+              aria-live="polite"
+              tabindex="-1"
+              hidden
+            ></div>
+
+            <div class="game-actions">
+              <button
+                class="button button-outline-light"
+                type="button"
+                data-game-reset
+              >
+                Reiniciar
+              </button>
+              <button
+                class="button button-primary"
+                type="button"
+                data-game-next
+                hidden
+              >
+                Siguiente reto
+              </button>
+            </div>
+
+            <p class="game-boundary">
+              Resultado educativo. No constituye diagnóstico, medición, diseño,
+              certificación, dictamen ni conclusión de cumplimiento. Una
+              decisión real exige revisar la tarea, el espacio, la evidencia y
+              las fuentes aplicables.
+            </p>
+            <noscript>
+              <p class="game-noscript">
+                Active JavaScript para utilizar los retos interactivos. La
+                biblioteca de contenidos permanece disponible sin esta función.
+              </p>
+            </noscript>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="page-section page-section-soft knowledge-library"
+        id="recursos"
+        aria-labelledby="library-title"
+      >
+        <div class="shell">
+          <header class="section-heading split-heading">
+            <div>
+              <p class="eyebrow">Biblioteca abierta</p>
+            <h2 id="library-title">Elija el tema que quiere explorar.</h2>
+            </div>
+            <p>
+              Lecturas breves para público empresarial, institucional,
+              comunitario y técnico.
+            </p>
+          </header>
+
+          <div
+            class="knowledge-filters"
+            role="group"
+            aria-label="Filtrar contenidos por categoría"
+          >
+            <button type="button" aria-pressed="true" data-knowledge-filter="all">
+              Todo
+            </button>
+            <button type="button" aria-pressed="false" data-knowledge-filter="normativa">
+              Normativa
+            </button>
+            <button type="button" aria-pressed="false" data-knowledge-filter="consultas">
+              Consultas
+            </button>
+            <button type="button" aria-pressed="false" data-knowledge-filter="curiosidades">
+              Curiosidades
+            </button>
+            <button type="button" aria-pressed="false" data-knowledge-filter="aprendizaje">
+              Aprendizaje
+            </button>
+          </div>
+          <p class="knowledge-filter-status" aria-live="polite" data-knowledge-status>
+            Mostrando 8 contenidos.
+          </p>
+
+          <div class="knowledge-grid">
+            <article class="knowledge-card" data-knowledge-card="normativa">
+              <div class="knowledge-card-meta">
+                <span>Normativa</span><small>Lectura · 3 min</small>
+              </div>
+              <h3>Cómo utilizar una norma sin perder el contexto de la tarea</h3>
+              <p>
+                Un valor aislado no explica por sí solo qué debe verificarse ni
+                cómo debe interpretarse una condición de iluminación.
+              </p>
+              <details>
+                <summary>Leer explicación</summary>
+                <div>
+                  <p>
+                    Una lectura responsable identifica la fuente, su versión,
+                    el alcance, la actividad, la tarea visual, el espacio, las
+                    condiciones de operación y las excepciones. Después
+                    relaciona esos elementos con la evidencia disponible.
+                  </p>
+                  <p>
+                    MVH no convierte una referencia general en una conclusión
+                    particular sin revisar el caso y la jerarquía normativa
+                    aplicable.
+                  </p>
+                </div>
+              </details>
+              <footer>
+                <span>Guía de lectura</span><span>Actualizado · julio 2026</span>
+              </footer>
+            </article>
+
+            <article class="knowledge-card" data-knowledge-card="normativa">
+              <div class="knowledge-card-meta">
+                <span>Normativa</span><small>Lectura · 4 min</small>
+              </div>
+              <h3>RETILAP, SG-SST y referentes complementarios</h3>
+              <p>
+                Cada fuente cumple una función distinta. Articularlas no
+                significa tratarlas como si tuvieran la misma jerarquía.
+              </p>
+              <details>
+                <summary>Leer explicación</summary>
+                <div>
+                  <p>
+                    El RETILAP aporta el marco técnico reglamentario vigente en
+                    Colombia para los asuntos dentro de su alcance. Su fuente
+                    oficial debe verificarse en el Ministerio de Minas y
+                    Energía. El SG-SST organiza la identificación de peligros,
+                    la evaluación de riesgos y los controles en el trabajo.
+                  </p>
+                  <p>
+                    Los referentes internacionales pueden complementar el
+                    análisis cuando sean pertinentes, estén autorizados y se
+                    documente su función. No se convierten automáticamente en
+                    una obligación colombiana.
+                  </p>
+                </div>
+              </details>
+              <footer>
+                <span>Orientación general</span><span>Revisión técnica MVH</span>
+              </footer>
+            </article>
+
+            <article class="knowledge-card" data-knowledge-card="consultas">
+              <div class="knowledge-card-meta">
+                <span>Consulta resuelta</span><small>Lectura · 2 min</small>
+              </div>
+              <h3>¿Una medición de lux basta para evaluar la iluminación?</h3>
+              <p>
+                La iluminancia es importante, pero la evaluación puede requerir
+                comprender mucho más que una lectura.
+              </p>
+              <details>
+                <summary>Ver respuesta</summary>
+                <div>
+                  <p>
+                    Depende del objetivo y del alcance. Además de medir
+                    iluminancia, puede ser necesario analizar tarea visual,
+                    superficie, uniformidad, distribución, sombras, contraste,
+                    deslumbramiento, color, parpadeo, horarios y condiciones de
+                    operación.
+                  </p>
+                  <p>
+                    El luxómetro tampoco mide por sí solo todas esas variables.
+                  </p>
+                </div>
+              </details>
+              <footer>
+                <span>Respuesta general</span><span>No constituye diagnóstico</span>
+              </footer>
+            </article>
+
+            <article class="knowledge-card" data-knowledge-card="consultas">
+              <div class="knowledge-card-meta">
+                <span>Consulta resuelta</span><small>Lectura · 2 min</small>
+              </div>
+              <h3>¿Una instalación nueva ya está verificada?</h3>
+              <p>
+                Diseñar, instalar y verificar son etapas relacionadas, pero no
+                equivalentes.
+              </p>
+              <details>
+                <summary>Ver respuesta</summary>
+                <div>
+                  <p>
+                    La documentación de diseño y las fichas técnicas permiten
+                    anticipar condiciones. La verificación en el lugar permite
+                    observar cómo responde la instalación ejecutada frente al
+                    espacio, la tarea, el uso, la regulación y el mantenimiento.
+                  </p>
+                  <p>
+                    El alcance de la verificación debe definirse antes de emitir
+                    una conclusión.
+                  </p>
+                </div>
+              </details>
+              <footer>
+                <span>Respuesta general</span><span>Alcance por confirmar</span>
+              </footer>
+            </article>
+
+            <article class="knowledge-card" data-knowledge-card="curiosidades">
+              <div class="knowledge-card-meta">
+                <span>Curiosidad</span><small>Lectura · 2 min</small>
+              </div>
+              <h3>Lux y lo que percibe el ojo no son la misma cosa</h3>
+              <p>
+                Dos lugares pueden registrar iluminancias similares y aun así
+                producir experiencias visuales distintas.
+              </p>
+              <details>
+                <summary>Descubrir por qué</summary>
+                <div>
+                  <p>
+                    La iluminancia describe la luz que llega a una superficie.
+                    La percepción también responde a lo que esa superficie
+                    refleja, al contraste, al tamaño del detalle, al campo
+                    visual, a la adaptación y a la distribución de luminancias.
+                  </p>
+                  <p>
+                    Por eso medir ayuda, pero interpretar relaciona la luz con
+                    la persona, la tarea y el entorno.
+                  </p>
+                </div>
+              </details>
+              <footer>
+                <span>Ciencia de la luz</span><span>Concepto introductorio</span>
+              </footer>
+            </article>
+
+            <article class="knowledge-card" data-knowledge-card="curiosidades">
+              <div class="knowledge-card-meta">
+                <span>Curiosidad</span><small>Lectura · 2 min</small>
+              </div>
+              <h3>La misma temperatura de color puede sentirse diferente</h3>
+              <p>
+                Un número de kelvin no describe por completo la calidad ni la
+                experiencia de una instalación.
+              </p>
+              <details>
+                <summary>Descubrir por qué</summary>
+                <div>
+                  <p>
+                    La distribución de la luz, la reproducción de los colores,
+                    el espectro, los acabados, el nivel de iluminación, la hora
+                    y el uso del espacio pueden cambiar la respuesta visual.
+                  </p>
+                  <p>
+                    Elegir una fuente requiere relacionar sus características
+                    con la tarea y con los receptores, no solo con un tono
+                    aparente.
+                  </p>
+                </div>
+              </details>
+              <footer>
+                <span>Ciencia de la luz</span><span>Concepto introductorio</span>
+              </footer>
+            </article>
+
+            <article class="knowledge-card" data-knowledge-card="aprendizaje">
+              <div class="knowledge-card-meta">
+                <span>Aprendizaje práctico</span><small>Guía · 3 min</small>
+              </div>
+              <h3>Qué preparar antes de una evaluación de iluminación</h3>
+              <p>
+                Una caracterización clara reduce supuestos, visitas incompletas
+                y cambios de alcance.
+              </p>
+              <details>
+                <summary>Ver lista práctica</summary>
+                <div>
+                  <ul>
+                    <li>Áreas, actividades y tareas visuales.</li>
+                    <li>Horarios, turnos y condiciones reales de operación.</li>
+                    <li>Planos, antecedentes y evaluaciones disponibles.</li>
+                    <li>Restricciones de acceso, fotografía y seguridad.</li>
+                    <li>Persona responsable de acompañar la visita.</li>
+                  </ul>
+                </div>
+              </details>
+              <footer>
+                <span>Preparación</span><span>Aplicación empresarial</span>
+              </footer>
+            </article>
+
+            <article class="knowledge-card" data-knowledge-card="aprendizaje">
+              <div class="knowledge-card-meta">
+                <span>Aprendizaje práctico</span><small>Guía · 3 min</small>
+              </div>
+              <h3>Antes de comprar luminarias, defina el problema</h3>
+              <p>
+                Comprar más luz no garantiza que la tarea, la seguridad o la
+                operación queden mejor resueltas.
+              </p>
+              <details>
+                <summary>Ver lista práctica</summary>
+                <div>
+                  <ul>
+                    <li>Qué necesita ver cada persona o receptor.</li>
+                    <li>Qué superficie, ruta o proceso debe iluminarse.</li>
+                    <li>Qué condiciones deben corregirse o conservarse.</li>
+                    <li>Qué restricciones existen para instalar y mantener.</li>
+                    <li>Cómo se verificará el resultado final.</li>
+                  </ul>
+                </div>
+              </details>
+              <footer>
+                <span>Preinversión</span><span>Decisión informada</span>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section shell">
+        <article class="download-card">
+          <div>
+            <p class="eyebrow light">Documento disponible</p>
+            <h2>Portafolio de iluminación laboral.</h2>
+            <p>
+              Consulte la arquitectura de servicios aprobada de MVH para
+              conocer, mejorar, proteger, verificar y sostener las condiciones
+              de iluminación laboral.
+            </p>
+          </div>
+          <a
+            class="button button-primary"
+            href="./assets/portafolio-iluminacion-laboral-mvh.pdf"
+            download
+          >
+            Descargar PDF
+          </a>
+        </article>
+      </section>
+
+      <section class="page-section page-section-soft">
+        <div class="shell editorial-split">
+          <div>
+            <p class="eyebrow">Gobierno editorial</p>
+            <h2>Contenido útil, pero también controlado.</h2>
+            <p class="section-lead">
+              Cada publicación normativa o técnica debe identificar fuente,
+              fecha, autor, revisión, versión, alcance y límites.
+            </p>
+            <ul class="check-list">
+              <li>No copiar íntegramente normas protegidas.</li>
+              <li>No presentar referentes internacionales como obligación automática.</li>
+              <li>No convertir contenido general en diagnóstico particular.</li>
+              <li>Actualizar, corregir o retirar información cuando cambie su vigencia.</li>
+              <li>Diferenciar orientación, criterio técnico y decisión profesional.</li>
+            </ul>
+          </div>
+          <aside>
+            <span>Límite de uso</span>
+            <h3>Aprender no sustituye evaluar.</h3>
+            <p>
+              Este contenido es educativo y orientador. No constituye diseño,
+              certificación, dictamen, declaración de cumplimiento, concepto
+              jurídico ni evaluación de una condición particular.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="page-cta">
+        <div class="shell">
+          <div>
+            <p class="eyebrow light">La pregunta puede ser el comienzo</p>
+            <h2>¿Hay un tema de iluminación que le gustaría comprender?</h2>
+            <p>
+              Envíenos su pregunta. MVH podrá responderla directamente o
+              convertirla en un próximo contenido de utilidad pública.
+            </p>
+          </div>
+          <div class="button-row">
+            <a class="button button-primary" data-whatsapp-link href="#">
+              Enviar una pregunta
+            </a>
+            <a class="button button-outline-light" href="./orientacion.html">
+              Solicitar orientación
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div>
+          <strong>INGENIERÍA MVH</strong>
+          <span>Ingeniería en iluminación</span>
+        </div>
+        <div>
+          <strong>Contacto</strong>
+          <a data-whatsapp-link href="#">
+            WhatsApp: <span data-whatsapp-display></span>
+          </a>
+          <a data-email-link href="#"><span data-email-display></span></a>
+        </div>
+        <div>
+          <strong>Acceso</strong>
+          <a href="./acceso-mvh-digital.html">Información de MVH Digital</a>
+          <button type="button" data-digital-link>Ingresar</button>
+        </div>
+        <div>
+          <strong>Información</strong>
+          <a href="./conocimiento.html">Centro de conocimiento</a>
+          <a href="./contacto.html">Contacto</a>
+          <span>Privacidad y términos pendientes de aprobación jurídica</span>
+        </div>
+      </div>
+    </footer>
+    <div class="toast" role="status" aria-live="polite" data-toast hidden></div>
+  </body>
+</html>

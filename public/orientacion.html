@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Formulario progresivo de orientación comercial para servicios de ingeniería de iluminación MVH."
+    />
+    <meta name="theme-color" content="#061b31" />
+    <meta name="robots" content="noindex, nofollow" data-prototype-robots />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:title" content="Solicitud de orientación | Ingeniería MVH" />
+    <meta
+      property="og:description"
+      content="Solicitud progresiva de orientación para servicios de ingeniería de iluminación MVH."
+    />
+    <meta name="twitter:card" content="summary" />
+    <title>Solicitud de orientación | Ingeniería MVH</title>
+    <link rel="icon" href="./assets/logo-mvh.png" type="image/png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./mvh-site-settings.js" defer></script>
+    <script src="./logic.js" defer></script>
+    <script src="./catalogs.bundle.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body class="form-body">
+    <a class="skip-link" href="#orientation-form">Saltar al formulario</a>
+
+    <header class="site-header compact-header">
+      <a class="brand" href="./index.html" aria-label="Ingeniería MVH, inicio">
+        <img src="./assets/logo-mvh.png" alt="" width="54" height="54" />
+        <span>
+          <strong>INGENIERÍA MVH</strong>
+          <small>Ingeniería en iluminación</small>
+        </span>
+      </a>
+      <a class="return-link" href="./index.html">← Volver al inicio</a>
+    </header>
+
+    <main>
+      <section class="form-hero">
+        <div class="shell">
+          <p class="eyebrow light">Orientación inicial</p>
+          <h1>Cuéntenos qué necesita decidir.</h1>
+          <p>
+            No necesita preparar un diagnóstico. Cuatro pasos breves organizan
+            la conversación con MVH.
+          </p>
+          <p class="form-context" data-requested-line-banner hidden></p>
+          <ol class="form-progress" aria-label="Progreso">
+            <li class="active" data-progress-step="1">
+              <span>1</span><b>Necesidad</b>
+            </li>
+            <li data-progress-step="2"><span>2</span><b>Contexto</b></li>
+            <li data-progress-step="3"><span>3</span><b>Situación</b></li>
+            <li data-progress-step="4"><span>4</span><b>Contacto</b></li>
+            <li data-progress-step="5"><span>✓</span><b>Revisión</b></li>
+          </ol>
+        </div>
+      </section>
+
+      <div class="form-shell shell">
+        <form id="orientation-form" class="orientation-form" novalidate>
+          <div class="form-message" role="alert" data-form-message hidden></div>
+
+          <section class="form-step active" data-form-step="1">
+            <header>
+              <p class="eyebrow">Paso 1 de 4</p>
+              <h2>¿Qué decisión necesita tomar?</h2>
+              <p>Seleccione la opción más cercana. Podrá aclararla después.</p>
+            </header>
+            <fieldset class="choice-grid">
+              <legend class="sr-only">Decisión principal</legend>
+              <label>
+                <input type="radio" name="need" value="Conocer las condiciones actuales" />
+                <span>
+                  <strong>Conocer las condiciones actuales</strong>
+                  <small>Evaluar un espacio, tarea, sistema o territorio.</small>
+                </span>
+              </label>
+              <label>
+                <input type="radio" name="need" value="Resolver un problema" />
+                <span>
+                  <strong>Resolver un problema</strong>
+                  <small>Visibilidad, sombras, reflejos, orientación o funcionamiento.</small>
+                </span>
+              </label>
+              <label>
+                <input type="radio" name="need" value="Preparar una inversión" />
+                <span>
+                  <strong>Preparar una inversión</strong>
+                  <small>Compra, sustitución, mejora o intervención.</small>
+                </span>
+              </label>
+              <label>
+                <input type="radio" name="need" value="Diseñar o revisar un proyecto" />
+                <span>
+                  <strong>Diseñar o revisar un proyecto</strong>
+                  <small>Proyecto nuevo, modificación o documentación.</small>
+                </span>
+              </label>
+              <label>
+                <input type="radio" name="need" value="Verificar una intervención" />
+                <span>
+                  <strong>Verificar una intervención</strong>
+                  <small>Comprobar resultados después de un cambio.</small>
+                </span>
+              </label>
+              <label>
+                <input type="radio" name="need" value="No estoy seguro" />
+                <span>
+                  <strong>No estoy seguro</strong>
+                  <small>Quiero organizar primero la necesidad.</small>
+                </span>
+              </label>
+            </fieldset>
+            <div class="form-note">
+              No solicita NIT, RUT, datos de trabajadores ni documentos adjuntos.
+            </div>
+            <div class="step-actions">
+              <span></span>
+              <button class="button button-primary" type="button" data-next>
+                Continuar
+              </button>
+            </div>
+          </section>
+
+          <section class="form-step" data-form-step="2" hidden>
+            <header>
+              <p class="eyebrow">Paso 2 de 4</p>
+              <h2>¿Dónde ocurre?</h2>
+              <p>
+                El departamento controla la lista oficial de municipios. El
+                código CIIU puede completar automáticamente la actividad.
+              </p>
+            </header>
+
+            <div class="field-grid">
+              <label>
+                <span>Tipo de organización <b aria-label="obligatorio">*</b></span>
+                <select name="organizationType" required>
+                  <option value="">Seleccione</option>
+                  <option>Empresa privada</option>
+                  <option>Entidad pública</option>
+                  <option>Organización rural o productiva</option>
+                  <option>Comunidad</option>
+                  <option>Contratista, consultor o aliado</option>
+                  <option>Otra</option>
+                </select>
+              </label>
+
+              <label>
+                <span>Departamento <b aria-label="obligatorio">*</b></span>
+                <select name="departmentCode" required data-department>
+                  <option value="">Seleccione el departamento</option>
+                </select>
+                <small>Catálogo territorial DIVIPOLA — DANE.</small>
+              </label>
+
+              <label>
+                <span>Ciudad o municipio <b aria-label="obligatorio">*</b></span>
+                <input
+                  type="text"
+                  name="municipality"
+                  list="municipality-options"
+                  placeholder="Seleccione primero el departamento"
+                  autocomplete="off"
+                  required
+                  disabled
+                  data-municipality
+                />
+                <datalist id="municipality-options" data-municipality-list></datalist>
+                <input type="hidden" name="municipalityCode" data-municipality-code />
+                <small data-municipality-status>0 opciones disponibles.</small>
+              </label>
+
+              <label>
+                <span>Código CIIU informado en el RUT</span>
+                <input
+                  type="text"
+                  name="ciiu"
+                  inputmode="numeric"
+                  maxlength="4"
+                  placeholder="Ejemplo: 8610"
+                  data-ciiu
+                />
+                <small data-ciiu-status>Dato opcional. Se valida con catálogo DANE.</small>
+              </label>
+
+              <label class="field-span">
+                <span>Actividad económica identificada</span>
+                <input
+                  type="text"
+                  name="economicActivity"
+                  readonly
+                  placeholder="Se completa al validar el código CIIU"
+                  data-economic-activity
+                />
+              </label>
+
+              <label>
+                <span>Contexto</span>
+                <select name="environment">
+                  <option>Interior</option>
+                  <option>Exterior</option>
+                  <option>Mixto</option>
+                  <option>No estoy seguro</option>
+                </select>
+              </label>
+
+              <label>
+                <span>Operación</span>
+                <select name="operation">
+                  <option>Principalmente diurna</option>
+                  <option>Principalmente nocturna</option>
+                  <option>Ambas</option>
+                  <option>Continua</option>
+                  <option>Por definir</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="step-actions">
+              <button class="button button-ghost" type="button" data-back>
+                Atrás
+              </button>
+              <button class="button button-primary" type="button" data-next>
+                Continuar
+              </button>
+            </div>
+          </section>
+
+          <section class="form-step" data-form-step="3" hidden>
+            <header>
+              <p class="eyebrow">Paso 3 de 4</p>
+              <h2>¿Qué está ocurriendo?</h2>
+              <p>
+                No comparta información sensible ni datos personales de
+                trabajadores.
+              </p>
+            </header>
+
+            <label class="full-field">
+              <span>Descripción breve <b aria-label="obligatorio">*</b></span>
+              <textarea
+                name="situation"
+                rows="7"
+                maxlength="700"
+                placeholder="Explique qué necesita ver, resolver, diseñar o comprobar"
+                required
+                data-situation
+              ></textarea>
+              <small><span data-character-count>0</span> de 700 caracteres.</small>
+            </label>
+
+            <fieldset class="check-grid">
+              <legend>Puede seleccionar varias condiciones</legend>
+              <label>
+                <input type="checkbox" name="conditions" value="Sombras, reflejos o deslumbramiento" />
+                <span>Sombras, reflejos o deslumbramiento</span>
+              </label>
+              <label>
+                <input type="checkbox" name="conditions" value="Zonas oscuras o distribución desigual" />
+                <span>Zonas oscuras o distribución desigual</span>
+              </label>
+              <label>
+                <input type="checkbox" name="conditions" value="Proyecto nuevo o remodelación" />
+                <span>Proyecto nuevo o remodelación</span>
+              </label>
+              <label>
+                <input type="checkbox" name="conditions" value="Sistema de emergencia" />
+                <span>Sistema de emergencia</span>
+              </label>
+              <label>
+                <input type="checkbox" name="conditions" value="Espacio público o territorio" />
+                <span>Espacio público o territorio</span>
+              </label>
+              <label>
+                <input type="checkbox" name="conditions" value="Cultivo, animal o proceso productivo" />
+                <span>Cultivo, animal o proceso productivo</span>
+              </label>
+              <label>
+                <input type="checkbox" name="conditions" value="Otra condición" />
+                <span>Otra condición</span>
+              </label>
+              <label>
+                <input type="checkbox" name="conditions" value="No aplica por ahora" />
+                <span>No aplica por ahora</span>
+              </label>
+            </fieldset>
+
+            <div class="step-actions">
+              <button class="button button-ghost" type="button" data-back>
+                Atrás
+              </button>
+              <button class="button button-primary" type="button" data-next>
+                Continuar
+              </button>
+            </div>
+          </section>
+
+          <section class="form-step" data-form-step="4" hidden>
+            <header>
+              <p class="eyebrow">Paso 4 de 4</p>
+              <h2>¿Cómo podemos continuar?</h2>
+              <p>Ingrese al menos un canal válido de contacto.</p>
+            </header>
+
+            <div class="field-grid">
+              <label>
+                <span>Nombre <b aria-label="obligatorio">*</b></span>
+                <input type="text" name="name" autocomplete="name" required />
+              </label>
+              <label>
+                <span>Organización</span>
+                <input type="text" name="organization" autocomplete="organization" />
+              </label>
+              <label>
+                <span>Correo</span>
+                <input type="email" name="email" autocomplete="email" />
+              </label>
+              <label>
+                <span>Teléfono o WhatsApp</span>
+                <input type="tel" name="phone" autocomplete="tel" />
+              </label>
+              <label>
+                <span>Canal preferido</span>
+                <select name="preferredChannel">
+                  <option>WhatsApp</option>
+                  <option>Correo</option>
+                  <option>Llamada</option>
+                </select>
+              </label>
+            </div>
+
+            <label class="consent">
+              <input type="checkbox" name="privacyConsent" required />
+              <span>
+                Autorizo el tratamiento de esta información para atender la
+                solicitud. El texto jurídico definitivo está pendiente de
+                aprobación.
+              </span>
+            </label>
+            <label class="consent optional">
+              <input type="checkbox" name="marketingConsent" />
+              <span>Deseo recibir información y contenidos de MVH.</span>
+            </label>
+
+            <div class="step-actions">
+              <button class="button button-ghost" type="button" data-back>
+                Atrás
+              </button>
+              <button class="button button-primary" type="button" data-next>
+                Revisar solicitud
+              </button>
+            </div>
+          </section>
+
+          <section class="form-step review-step" data-form-step="5" hidden>
+            <header>
+              <p class="eyebrow">Revisión</p>
+              <h2>Confirme la información.</h2>
+              <p>Puede volver y corregir antes de preparar el contacto.</p>
+            </header>
+
+            <dl class="review-grid" data-review></dl>
+
+            <div class="orientation-note">
+              Esta solicitud no constituye evaluación, cotización,
+              certificación, dictamen ni declaración de cumplimiento.
+            </div>
+
+            <div class="prototype-result" data-prototype-result hidden></div>
+
+            <div class="step-actions final-actions">
+              <button class="button button-ghost" type="button" data-back>
+                Corregir
+              </button>
+              <a class="button button-primary" href="#" data-form-whatsapp>
+                Continuar por WhatsApp
+              </a>
+              <button class="button button-ghost" type="button" data-prototype-submit>
+                Probar sin enviar
+              </button>
+            </div>
+          </section>
+        </form>
+
+        <aside class="form-aside">
+          <p class="eyebrow">Ayuda contextual</p>
+          <h2>No necesita tener todas las respuestas.</h2>
+          <p>
+            El formulario organiza la conversación. MVH revisa la información
+            antes de confirmar el alcance.
+          </p>
+          <ul>
+            <li>No solicita NIT o RUT.</li>
+            <li>No solicita datos de trabajadores.</li>
+            <li>No permite adjuntos en esta etapa.</li>
+            <li>No calcula precios ni cumplimiento.</li>
+          </ul>
+          <a data-email-link href="#">Prefiero escribir por correo →</a>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer compact-footer">
+      <div class="shell footer-grid">
+        <div>
+          <strong>INGENIERÍA MVH</strong>
+          <span>Orientación comercial de iluminación</span>
+        </div>
+        <div>
+          <strong>Contacto</strong>
+          <a data-whatsapp-link href="#">WhatsApp: <span data-whatsapp-display></span></a>
+          <a data-email-link href="#"><span data-email-display></span></a>
+        </div>
+        <div>
+          <strong>Estado</strong>
+          <span>Preproducción privada · no almacena ni transmite información</span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" data-toast hidden></div>
+  </body>
+</html>
